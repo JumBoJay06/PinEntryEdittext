@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.pinentryedittext.PinEntryEditText
+        android:id="@+id/edit1"
+        android:layout_width="236dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textIsSelectable="false"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        app:editTextSpace="9dp"
+        app:editTextBackground="@drawable/edit_text_border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.pinentryedittext.PinEntryEditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textIsSelectable="false"
+        android:textSize="32sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        app:editTextSpace="12dp"
+        app:editTextBackground="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit1"/>
+
+    <com.example.pinentryedittext.PinEntryEditText
+        android:layout_width="236dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textIsSelectable="false"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:editTextSpace="9dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
